@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="SDL_Engine" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Option virtualFolders="Core\;Core\src\;Core\include\;" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/SDL_Template" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="sdl/include" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-lmingw32" />
+					<Add option="-lSDL2main" />
+					<Add option="-lSDL2" />
+					<Add option="-lSDL2_image" />
+					<Add option="-lSDL2_ttf" />
+					<Add directory="sdl/lib" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/SDL_Template" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="include/Button.h">
+			<Option virtualFolder="Core/src/" />
+		</Unit>
+		<Unit filename="include/DrawBasic.h">
+			<Option virtualFolder="Core/include/" />
+		</Unit>
+		<Unit filename="include/Game.h">
+			<Option virtualFolder="Core/include/" />
+		</Unit>
+		<Unit filename="include/Imagen.h">
+			<Option virtualFolder="Core/include/" />
+		</Unit>
+		<Unit filename="include/Texto.h">
+			<Option virtualFolder="Core/include/" />
+		</Unit>
+		<Unit filename="include/VectorMath.h">
+			<Option virtualFolder="Core/include/" />
+		</Unit>
+		<Unit filename="main.cpp" />
+		<Unit filename="src/Button.cpp">
+			<Option virtualFolder="Core/src/" />
+		</Unit>
+		<Unit filename="src/DrawBasic.cpp">
+			<Option virtualFolder="Core/src/" />
+		</Unit>
+		<Unit filename="src/Game.cpp">
+			<Option virtualFolder="Core/src/" />
+		</Unit>
+		<Unit filename="src/Imagen.cpp">
+			<Option virtualFolder="Core/src/" />
+		</Unit>
+		<Unit filename="src/Texto.cpp">
+			<Option virtualFolder="Core/src/" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
