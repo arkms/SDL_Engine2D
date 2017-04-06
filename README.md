@@ -12,6 +12,8 @@ Si deseas porponer sugerencias, reportar bugs o apoyar es aceptado todo comentar
 
 El proyecto esta elaborado en CodeBlocks y usa [SDL2](https://www.libsdl.org/) el cual ya se encuentra intregado para que no sea necesario configurar CodeBlocks en cada maquina donde se desea utilizar el proyecto
 
+![captura](http://arjierdagames.com/blog/Img/SDL_Engine2D_Capture.png)
+
 ### Capacidad de libreria
 - Cargar imagenes (png, jpg, bmp)
 - Imprimir texto
@@ -25,3 +27,4 @@ El proyecto esta elaborado en CodeBlocks y usa [SDL2](https://www.libsdl.org/) e
 - Dibujar elipses
 - Sonido
 - RadioButton.
+- Poder escalar imagenes y ¿rotarlos?
