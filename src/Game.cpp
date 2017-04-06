@@ -36,7 +36,7 @@ void Game::draw()
     btn1.Dibujar();
 
     ///Dibujar imagen
-    img.Dibujar();
+    //img.Dibujar();
 
     ///Terminamos de dibujar
     SDL_RenderPresent(renderer);
