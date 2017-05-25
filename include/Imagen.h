@@ -11,15 +11,21 @@ class Imagen
         virtual ~Imagen();
 
         void CargarImagen(const char* _path, int _x, int _y);
+        void CargarImagen(const char* _path, int _x, int _y, int _MascaraR, int _MascaraG, int _MascaraB);
         void Dibujar();
 
-        int x;
-        int y;
+        ///Set y Gets de posicion
+        void SetPos(int _x, int _y);
+        void SetX(int _x);
+        void SetY(int _y);
+        int GetX();
+        int GetY();
 
     protected:
 
     private:
         SDL_Texture* texture;
+        SDL_Rect ImgPos;
 
 };
 
