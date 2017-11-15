@@ -33,7 +33,7 @@ void Texto::SetText(const char* _texto)
         delete text_;
     text_ = (char*)_texto; ///Respaldamos texto
     ///Generamos texto
-    SDL_Surface* textSurface = TTF_RenderText_Solid(g_game.gFont, "Hola Mundo", textColor);
+    SDL_Surface* textSurface = TTF_RenderText_Solid(g_game.gFont, text_, textColor);
     text = SDL_CreateTextureFromSurface(g_game.renderer, textSurface);
     ///Ajustamos posicion
     int text_width = textSurface->w;

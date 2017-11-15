@@ -5,7 +5,7 @@
 		<Option title="SDL_Engine" />
 		<Option pch_mode="2" />
 		<Option compiler="gcc" />
-		<Option virtualFolders="Core\;Core\src\;Core\include\;" />
+		<Option virtualFolders="Core/;Core/src/;Core/include/;" />
 		<Build>
 			<Target title="Debug">
 				<Option output="bin/Debug/SDL_Template" prefix_auto="1" extension_auto="1" />
@@ -39,20 +39,36 @@
 					<Add option="-s" />
 				</Linker>
 			</Target>
+			<Target title="Linux">
+				<Option output="bin/DebugLinux/SDL_Template" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/DebugLinux/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="sdl/include" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-lSDL2main" />
+					<Add option="-lSDL2" />
+					<Add option="-lSDL2_image" />
+					<Add option="-lSDL2_ttf" />
+					<Add directory="sdl/lib" />
+				</Linker>
+			</Target>
 		</Build>
 		<Compiler>
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="include/Button.h">
-			<Option virtualFolder="Core/src/" />
+			<Option virtualFolder="Core/include/" />
 		</Unit>
 		<Unit filename="include/DrawBasic.h">
 			<Option virtualFolder="Core/include/" />
 		</Unit>
-		<Unit filename="include/Game.h">
-			<Option virtualFolder="Core/include/" />
-		</Unit>
+		<Unit filename="include/Game.h" />
 		<Unit filename="include/Imagen.h">
 			<Option virtualFolder="Core/include/" />
 		</Unit>
@@ -69,9 +85,7 @@
 		<Unit filename="src/DrawBasic.cpp">
 			<Option virtualFolder="Core/src/" />
 		</Unit>
-		<Unit filename="src/Game.cpp">
-			<Option virtualFolder="Core/src/" />
-		</Unit>
+		<Unit filename="src/Game.cpp" />
 		<Unit filename="src/Imagen.cpp">
 			<Option virtualFolder="Core/src/" />
 		</Unit>
